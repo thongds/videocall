@@ -31,10 +31,10 @@ class ViewController: UIViewController {
        
         alert.addTextField { (configurationTextField) in
             //configure here your textfield
-            
+            configurationTextField.placeholder = "get stream "
         }
         alert.addTextField { (confiTex) in
-            
+            confiTex.placeholder  = "Broadcast stream"
         }
         alert.addAction(UIAlertAction(title: "Send", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
             print("Done !!")
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
     }
     
     func startBroadcast(chanel : String){
-        videoVC.startBroadcast(broadCast: chanel)
+        //videoVC.startBroadcast(broadCast: chanel)
     }
     
     @objc func update(timer: Timer) {

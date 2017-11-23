@@ -8,5 +8,7 @@
 #import "RTSPPlayer.h"
 #import "Utilities.h"
 
+#import "SettingsViewController.h"
+#import "SettingsViewModel.h"
 
 #endif

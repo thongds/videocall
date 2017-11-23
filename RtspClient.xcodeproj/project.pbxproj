@@ -25,6 +25,12 @@
 		415C63F01CECD063005F81E4 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E91CECD063005F81E4 /* libavutil.a */; };
 		415C63F11CECD063005F81E4 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63EA1CECD063005F81E4 /* libswresample.a */; };
 		415C63F21CECD063005F81E4 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63EB1CECD063005F81E4 /* libswscale.a */; };
+		843E3A441FC6AC3600E5E3E1 /* SDKSampleApp.swift in Resources */ = {isa = PBXBuildFile; fileRef = 843E3A431FC6AC3600E5E3E1 /* SDKSampleApp.swift */; };
+		843E3A4E1FC6AC6600E5E3E1 /* SettingsTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E3A451FC6AC6500E5E3E1 /* SettingsTextFieldCell.m */; };
+		843E3A4F1FC6AC6600E5E3E1 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E3A461FC6AC6500E5E3E1 /* SettingsViewController.m */; };
+		843E3A501FC6AC6600E5E3E1 /* SettingsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E3A491FC6AC6500E5E3E1 /* SettingsViewModel.m */; };
+		843E3A511FC6AC6600E5E3E1 /* CustomFrameSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E3A4A1FC6AC6500E5E3E1 /* CustomFrameSizeViewController.m */; };
+		843E3A521FC6AC6600E5E3E1 /* AppSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843E3A4B1FC6AC6500E5E3E1 /* AppSettings.storyboard */; };
 		84EFB7451FC5659700864EB5 /* WowzaGoCoderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EFB7441FC5659700864EB5 /* WowzaGoCoderSDK.framework */; };
 		84EFB7461FC5659700864EB5 /* WowzaGoCoderSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84EFB7441FC5659700864EB5 /* WowzaGoCoderSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84EFB7491FC5660200864EB5 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EFB7481FC5660200864EB5 /* VideoViewController.swift */; };
@@ -69,6 +75,16 @@
 		415C63E91CECD063005F81E4 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = FFMpegiOS/lib/libavutil.a; sourceTree = "<group>"; };
 		415C63EA1CECD063005F81E4 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = FFMpegiOS/lib/libswresample.a; sourceTree = "<group>"; };
 		415C63EB1CECD063005F81E4 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = FFMpegiOS/lib/libswscale.a; sourceTree = "<group>"; };
+		843E3A431FC6AC3600E5E3E1 /* SDKSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SDKSampleApp.swift; sourceTree = "<group>"; };
+		843E3A451FC6AC6500E5E3E1 /* SettingsTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTextFieldCell.m; sourceTree = "<group>"; };
+		843E3A461FC6AC6500E5E3E1 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		843E3A471FC6AC6500E5E3E1 /* SettingsTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTextFieldCell.h; sourceTree = "<group>"; };
+		843E3A481FC6AC6500E5E3E1 /* SettingsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewModel.h; sourceTree = "<group>"; };
+		843E3A491FC6AC6500E5E3E1 /* SettingsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewModel.m; sourceTree = "<group>"; };
+		843E3A4A1FC6AC6500E5E3E1 /* CustomFrameSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFrameSizeViewController.m; sourceTree = "<group>"; };
+		843E3A4B1FC6AC6500E5E3E1 /* AppSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppSettings.storyboard; sourceTree = "<group>"; };
+		843E3A4C1FC6AC6600E5E3E1 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		843E3A4D1FC6AC6600E5E3E1 /* CustomFrameSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFrameSizeViewController.h; sourceTree = "<group>"; };
 		84EFB7441FC5659700864EB5 /* WowzaGoCoderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WowzaGoCoderSDK.framework; sourceTree = "<group>"; };
 		84EFB7481FC5660200864EB5 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +125,8 @@
 				415C63E31CECD001005F81E4 /* libbz2.tbd */,
 				415C63E11CECCFFA005F81E4 /* libiconv.tbd */,
 				415C63DF1CECCFF3005F81E4 /* libz.tbd */,
+				843E3A431FC6AC3600E5E3E1 /* SDKSampleApp.swift */,
+				843E3A541FC6AC7E00E5E3E1 /* New Group */,
 				415C63991CECC824005F81E4 /* RtspClient */,
 				415C63981CECC824005F81E4 /* Products */,
 			);
@@ -141,6 +159,22 @@
 				415C63D51CECCD69005F81E4 /* RtspClient-Bridging-Header.h */,
 			);
 			path = RtspClient;
+			sourceTree = "<group>";
+		};
+		843E3A541FC6AC7E00E5E3E1 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				843E3A4B1FC6AC6500E5E3E1 /* AppSettings.storyboard */,
+				843E3A4D1FC6AC6600E5E3E1 /* CustomFrameSizeViewController.h */,
+				843E3A4A1FC6AC6500E5E3E1 /* CustomFrameSizeViewController.m */,
+				843E3A471FC6AC6500E5E3E1 /* SettingsTextFieldCell.h */,
+				843E3A451FC6AC6500E5E3E1 /* SettingsTextFieldCell.m */,
+				843E3A4C1FC6AC6600E5E3E1 /* SettingsViewController.h */,
+				843E3A461FC6AC6500E5E3E1 /* SettingsViewController.m */,
+				843E3A481FC6AC6500E5E3E1 /* SettingsViewModel.h */,
+				843E3A491FC6AC6500E5E3E1 /* SettingsViewModel.m */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +237,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843E3A521FC6AC6600E5E3E1 /* AppSettings.storyboard in Resources */,
 				415C63A51CECC824005F81E4 /* LaunchScreen.storyboard in Resources */,
 				415C63A21CECC824005F81E4 /* Assets.xcassets in Resources */,
+				843E3A441FC6AC3600E5E3E1 /* SDKSampleApp.swift in Resources */,
 				415C63A01CECC824005F81E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,9 +254,13 @@
 			files = (
 				415C639D1CECC824005F81E4 /* ViewController.swift in Sources */,
 				415C63DD1CECCD69005F81E4 /* RTSPPlayer.m in Sources */,
+				843E3A4E1FC6AC6600E5E3E1 /* SettingsTextFieldCell.m in Sources */,
+				843E3A4F1FC6AC6600E5E3E1 /* SettingsViewController.m in Sources */,
 				84EFB7491FC5660200864EB5 /* VideoViewController.swift in Sources */,
 				415C639B1CECC824005F81E4 /* AppDelegate.swift in Sources */,
+				843E3A511FC6AC6600E5E3E1 /* CustomFrameSizeViewController.m in Sources */,
 				415C63DC1CECCD69005F81E4 /* AudioStreamer.m in Sources */,
+				843E3A501FC6AC6600E5E3E1 /* SettingsViewModel.m in Sources */,
 				415C63DE1CECCD69005F81E4 /* Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
