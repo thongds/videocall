@@ -79,11 +79,7 @@ class VideoViewController: UIViewController, WZStatusCallback, WZVideoSink, WZAu
         UserDefaults.standard.set(savedConfigData, forKey: SDKSampleSavedConfigKey)
         UserDefaults.standard.synchronize()
         
-        // Update the configuration settings in the GoCoder SDK
-        if (goCoder != nil) {
-            goCoder?.config = goCoderConfig
-            blackAndWhiteVideoEffect = UserDefaults.standard.bool(forKey: BlackAndWhiteKey)
-        }
+       
     }
     
     override func viewDidLayoutSubviews() {
@@ -129,7 +125,6 @@ class VideoViewController: UIViewController, WZStatusCallback, WZVideoSink, WZAu
                 
             }
         }
-        startBroadcast()
     }
     
     override var prefersStatusBarHidden:Bool {
@@ -148,7 +143,13 @@ class VideoViewController: UIViewController, WZStatusCallback, WZVideoSink, WZAu
     }
     
     //MARK - UI Action Methods
-    func startBroadcast(){
+    func startBroadcast(streamName : String){
+        // Update the configuration settings in the GoCoder SDK
+        if (goCoder != nil) {
+            goCoderConfig.streamName = streamName
+            goCoder?.config = goCoderConfig
+            blackAndWhiteVideoEffect = UserDefaults.standard.bool(forKey: BlackAndWhiteKey)
+        }
         // Ensure the minimum set of configuration settings have been specified necessary to
         // initiate a broadcast streaming session
         if let configError = goCoder?.config.validateForBroadcast() {
@@ -162,6 +163,7 @@ class VideoViewController: UIViewController, WZStatusCallback, WZVideoSink, WZAu
             }
             else {
                 receivedGoCoderEventCodes.removeAll()
+                
                 goCoder?.startStreaming(self)
             }
         }

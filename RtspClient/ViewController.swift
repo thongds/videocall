@@ -70,6 +70,7 @@ class ViewController: UIViewController {
     
     func startBroadcast(chanel : String){
         //videoVC.startBroadcast(broadCast: chanel)
+        videoVC.startBroadcast(streamName: chanel)
     }
     
     @objc func update(timer: Timer) {
