@@ -13,9 +13,11 @@ import WowzaGoCoderSDK
 class VideoViewController: UIViewController, WZStatusCallback, WZVideoSink, WZAudioSink {
     
     //MARK: - Class Member Variables
-    
+    //com.wowza.gocoder.sdk.swiftsampleapp2
+    let SDKSampleAppLicenseKey = "GOSK-7344-0103-E04D-4F66-F220"
     let SDKSampleSavedConfigKey = "SDKSampleSavedConfigKey"
-    let SDKSampleAppLicenseKey = "GOSK-6E44-0103-E169-50C1-21DF"
+    //com.wowza.gocoder.sdk.swiftsampleapp
+    //let SDKSampleAppLicenseKey = "GOSK-6E44-0103-E169-50C1-21DF"
     let BlackAndWhiteEffectKey = "BlackAndWhiteKey"
     
     @IBOutlet weak var broadcastButton:UIButton!
@@ -65,6 +67,7 @@ class VideoViewController: UIViewController, WZStatusCallback, WZVideoSink, WZAu
         if let goCoderLicensingError = WowzaGoCoder.registerLicenseKey(SDKSampleAppLicenseKey) {
             self.showAlert("GoCoder SDK Licensing Error", error: goCoderLicensingError as NSError)
         }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -125,6 +128,8 @@ class VideoViewController: UIViewController, WZStatusCallback, WZVideoSink, WZAu
                 
             }
         }
+        
+        swichCamera()
     }
     
     override var prefersStatusBarHidden:Bool {
@@ -167,7 +172,6 @@ class VideoViewController: UIViewController, WZStatusCallback, WZVideoSink, WZAu
                 goCoder?.startStreaming(self)
             }
         }
-       swichCamera()
     }
     @IBAction func didTapBroadcastButton(_ sender:AnyObject?) {
         // Ensure the minimum set of configuration settings have been specified necessary to

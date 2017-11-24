@@ -55,6 +55,7 @@ class ViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         videoVC = segue.destination as! VideoViewController
+        
     }
     
     func playStream(stream : String) {
